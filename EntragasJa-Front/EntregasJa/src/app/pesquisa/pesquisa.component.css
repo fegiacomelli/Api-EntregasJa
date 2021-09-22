@@ -1,0 +1,10 @@
+.bg{
+    background-color: dodgerblue;
+    border-radius: 25px;
+}
+
+.background{
+    background-color: rgba(30, 143, 255, 0.432);
+    max-width: 100%;
+    max-height: 100%;
+}   

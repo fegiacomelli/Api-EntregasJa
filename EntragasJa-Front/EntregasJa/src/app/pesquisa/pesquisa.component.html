@@ -1,0 +1,36 @@
+
+    <div class="container col-md-6 bg p-5 mb-5 mt-5">
+  
+      <div class="col-md-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+  
+                 
+                <div class="form-group">
+                    <h3>Pesquisa:</h3>
+                    <input type="text" class="form-control font" id="pesquisar" 
+                    placeholder="Qual seu numero de rastreio?" [(ngModel)]= 'nRastreio' (keyup)='pesquisar()'>
+                  </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-dark "  (click)="pesquisar()">Pesquisar</button>
+                </div>
+              </div>
+          </div>
+  
+          <div class="col-md-12 d-flex flex-wrap justify-content-center p-5">
+                <div class="card mt-2 m-2" style="width: 20rem">
+                  <div class="card-body text-center">
+                    <h5 class="card-title texto">Produto: {{encomenda.nome}}</h5>
+                    <p class="card-title texto">Remetente: {{encomenda.remetente}}</p>
+                    <p class="card-text texto">Destinatario: {{encomenda.destinatario}}</p>
+                    <p class="texto text-color-red">Status: {{encomenda.status}}</p>
+                    <div class="d-flex justify-content-center">
+                    </div>
+               </div>
+              </div>
+        </div>
+  
+      </div>
+    </div>
+
